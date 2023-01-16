@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom property</title>
+    <style>
+        /*  */
+        :root {
+            --text-color: orange;
+        }
+
+        h1 {
+            color: var(--text-color);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        .side-nav,
+        .blog {
+            float: left;
+            height: 500px;
+        }
+
+        .side-nav {
+            background-color: beige;
+            width: 200px;
+        }
+
+        .blog {
+            background-color: cornflowerblue;
+            width: calc(100% - 200px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>I am Exploring Custom properties</h1>
+    </header>
+    <main>
+        <h1>Main part</h1>
+        <section>
+            <aside class="side-nav">
+                <h4>This is Aside </h4>
+            </aside>
+            <div class="blog">
+                <h4>blogs</h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><small>footer</small></p>
+    </footer>
+</body>
+
+</html>
